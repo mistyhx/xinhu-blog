@@ -7,7 +7,9 @@ const typography = new Typography({
   bodyFontFamily: ["Helvetica", "sans-serif"],
   overrideStyles: () => ({
     a: {
-      color: "var(--textLink)",
+      // color: "var(--textLink)",
+      fontWeight: `bold`,
+      textDecoration: `underline`,
     },
     p: {
       opacity: 0.78,
