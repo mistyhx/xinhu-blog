@@ -20,6 +20,7 @@ const Articles = () => {
         <Tab title="Illustration" />
       </div>
       <ArticlePreview />
+      <ArticlePreview />
     </div>
   )
 }
