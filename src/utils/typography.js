@@ -9,6 +9,9 @@ const typography = new Typography({
     a: {
       color: "var(--textLink)",
     },
+    p: {
+      opacity: 0.78,
+    },
   }),
 })
 

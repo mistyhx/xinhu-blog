@@ -3,7 +3,7 @@ import React from "react"
 const Introduction = () => {
   return (
     <div>
-      <h1>👋 Hi There,</h1>
+      <h2>👋 Hi There,</h2>
       <p>
         My name is Xin, I am an UI/UX designer and software developer. I find it particular fascinating to create
         software with design thinking and make digital products aesthetically pleasing.
