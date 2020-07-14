@@ -24,6 +24,7 @@ const Layout = ({ children }) => {
 
   return (
     <div
+      className="layout"
       style={{
         backgroundColor: "var(--bg)",
         color: "var(--textNormal)",
@@ -31,16 +32,10 @@ const Layout = ({ children }) => {
         height: `100vh`,
       }}
     >
-      <header>
+      <header className="header">
         <Header />
       </header>
-
-      <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
-      </footer>
+      <main className="main">{children}</main>
     </div>
   )
 }

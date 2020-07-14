@@ -3,7 +3,7 @@ import ArticlePreview from "./ArticlePreview"
 
 const Articles = () => {
   return (
-    <div>
+    <div className="articles">
       <ArticlePreview />
     </div>
   )

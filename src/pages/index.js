@@ -10,11 +10,11 @@ import SideBar from "../components/SideBar"
 const IndexPage = () => (
   <Layout>
     <SEO title="xinhudesign" />
+
     <SideBar>
       <Introduction />
     </SideBar>
     <Articles />
-    <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )
 

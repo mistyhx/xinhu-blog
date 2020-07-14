@@ -23,6 +23,18 @@ body.dark {
   --textLink: yellow;
 }
 
+.layout {
+  display: grid;
+  grid-template-rows: 120px auto;
+}
+
+.main {
+  padding: 0 4rem;
+  display: grid;
+  grid-template-columns: 280px auto;
+  column-gap: 6rem;
+}
+
 /*html {*/
 /*  font-family: sans-serif;*/
 /*  -ms-text-size-adjust: 100%;*/
