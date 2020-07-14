@@ -13,6 +13,8 @@ body {
   --bg: white;
   --textNormal: black;
   --textLink: gray;
+  --textLink: black;
+  --underlineColor: black;
   background-color: var(--bg);
   color: var(--textNormal);
 }
@@ -20,7 +22,8 @@ body {
 body.dark {
   --bg: #282c35;
   --textNormal: rgba(255, 255, 255, 0.9);
-  --textLink: yellow;
+  --textLink: white;
+  --underlineColor: white;
 }
 
 .layout {

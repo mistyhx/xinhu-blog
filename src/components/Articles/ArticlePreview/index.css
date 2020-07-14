@@ -1,9 +1,32 @@
 .preview-container {
-  width: 50%;
 }
 
-.preview-date {
-  opacity: 0.4;
+.preview-container a {
+  text-decoration: none;
 }
-.preview-title:after {
+
+.preview-date p {
+  opacity: 0.5;
+  margin-bottom: 0.5rem;
+}
+
+.preview-container h2 {
+  margin-bottom: 0.5rem;
+  line-height: 2rem;
+}
+
+.preview-title {
+  margin-bottom: 1.2rem;
+}
+
+.underline {
+  width: 4rem;
+  height: 0.2rem;
+  opacity: 0.5;
+  transition: all 0.8s ease-in-out;
+}
+
+.preview-title:hover .underline {
+  width: 8rem;
+  opacity: 1;
 }
