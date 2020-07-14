@@ -11,19 +11,19 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./Header"
 import "./layout.css"
 
-const Layout = ({ children, sidebar }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+const Layout = ({ children }) => {
+  // const data = useStaticQuery(graphql`
+  //   query SiteTitleQuery {
+  //     site {
+  //       siteMetadata {
+  //         title
+  //       }
+  //     }
+  //   }
+  // `)
 
   return (
-    <>
+    <div style={{ backgroundColor: "var(--bg)" }}>
       <header>
         <Header />
       </header>
@@ -34,7 +34,7 @@ const Layout = ({ children, sidebar }) => {
         {` `}
         <a href="https://www.gatsbyjs.org">Gatsby</a>
       </footer>
-    </>
+    </div>
   )
 }
 

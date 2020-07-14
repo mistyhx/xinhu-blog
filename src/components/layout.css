@@ -7,6 +7,17 @@ body {
   margin: 0;
 }
 
+/*Theme Toggling*/
+
+body {
+  --bg: white;
+  background-color: var(--bg);
+}
+
+body.dark {
+  --bg: darkslategray;
+}
+
 /*html {*/
 /*  font-family: sans-serif;*/
 /*  -ms-text-size-adjust: 100%;*/
