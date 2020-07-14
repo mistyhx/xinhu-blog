@@ -1,4 +1,5 @@
 import React from "react"
+import { StaticQuery, graphql } from "gatsby"
 import ArticlePreview from "./ArticlePreview"
 import "./index.css"
 
@@ -11,7 +12,9 @@ const Tab = ({ title }) => {
   )
 }
 
-const Articles = () => {
+const Articles = ({ data }) => {
+  const { edges: posts } = data.allMarkdownRemark
+  console.log(posts)
   return (
     <div className="articles">
       <div className="tabs">
@@ -19,10 +22,32 @@ const Articles = () => {
         <Tab title="Projects" />
         <Tab title="Illustration" />
       </div>
-      <ArticlePreview />
-      <ArticlePreview />
+      {posts && posts.map(post => <ArticlePreview key={post.node.id} data={post.node} />)}
     </div>
   )
 }
 
-export default Articles
+export default function ArticleList() {
+  //non page components need to query using Static Query
+  return (
+    <StaticQuery
+      query={graphql`
+        query {
+          allMarkdownRemark {
+            edges {
+              node {
+                id
+                frontmatter {
+                  title
+                  date(formatString: "MMMM DD, YYYY")
+                  description
+                }
+              }
+            }
+          }
+        }
+      `}
+      render={data => <Articles data={data} />}
+    />
+  )
+}
