@@ -7,7 +7,7 @@ const Tab = ({ title }) => {
   return (
     <div className="tab">
       <div>{title}</div>
-      <div className="div">/</div>
+      <span className="dot">•</span>
     </div>
   )
 }

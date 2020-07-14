@@ -5,15 +5,19 @@ import "./index.css"
 const ArticlePreview = ({ data }) => {
   return (
     <div className="preview-container">
-      <Link to={data.frontmatter.title}>
-        <div className="preview-title">
+      <div className="preview-date">
+        <p>{data.frontmatter.date}</p>
+      </div>
+      <div className="preview-title">
+        <Link to={data.frontmatter.title}>
           <h2>{data.frontmatter.title}</h2>
-        </div>
-        <div className="preview-excerpt">
-          <p>{data.frontmatter.description}</p>
-        </div>
-        <div className="preview-date">{data.frontmatter.date}</div>
-      </Link>
+          <div className="underline" style={{ backgroundColor: `var(--underlineColor)` }} />
+        </Link>
+      </div>
+
+      <div className="preview-excerpt">
+        <p>{data.frontmatter.description}</p>
+      </div>
     </div>
   )
 }

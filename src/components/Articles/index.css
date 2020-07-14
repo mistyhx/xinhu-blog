@@ -1,9 +1,16 @@
 .tabs {
   display: flex;
   flex-direction: row;
-  margin-bottom: 2rem;
 }
 
 .tab {
+  position: relative;
   width: 100px;
+}
+
+.dot {
+  font-size: 2rem;
+  height: 1rem;
+  position: relative;
+  top: -1rem;
 }
