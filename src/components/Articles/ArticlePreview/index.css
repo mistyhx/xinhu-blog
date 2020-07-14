@@ -1,0 +1,9 @@
+.preview-container {
+  width: 50%;
+}
+
+.preview-date {
+  opacity: 0.4;
+}
+.preview-title:after {
+}
