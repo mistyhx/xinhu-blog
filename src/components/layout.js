@@ -23,7 +23,14 @@ const Layout = ({ children }) => {
   // `)
 
   return (
-    <div style={{ backgroundColor: "var(--bg)" }}>
+    <div
+      style={{
+        backgroundColor: "var(--bg)",
+        color: "var(--textNormal)",
+        transition: "color 0.2s ease-out, background 0.2s ease-out",
+        height: `100vh`,
+      }}
+    >
       <header>
         <Header />
       </header>

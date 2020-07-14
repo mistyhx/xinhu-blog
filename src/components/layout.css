@@ -11,11 +11,14 @@ body {
 
 body {
   --bg: white;
+  --textNormal: black;
   background-color: var(--bg);
+  color: var(--textNormal);
 }
 
 body.dark {
-  --bg: darkslategray;
+  --bg: #282c35;
+  --textNormal: rgba(255, 255, 255, 0.9);
 }
 
 /*html {*/
