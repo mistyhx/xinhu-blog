@@ -1,6 +1,6 @@
 html {
-  font-family: Helvetica, sans-serif;
-  font-size: 18px;
+  /*font-family: Helvetica, sans-serif;*/
+  /*font-size: 18px;*/
 }
 
 body {
@@ -12,6 +12,7 @@ body {
 body {
   --bg: white;
   --textNormal: black;
+  --textLink: gray;
   background-color: var(--bg);
   color: var(--textNormal);
 }
@@ -19,6 +20,7 @@ body {
 body.dark {
   --bg: #282c35;
   --textNormal: rgba(255, 255, 255, 0.9);
+  --textLink: yellow;
 }
 
 /*html {*/
