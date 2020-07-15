@@ -49,13 +49,29 @@ body.dark {
 .main {
   padding: 0 4rem 10rem 4rem;
   display: grid;
-  grid-template-columns: 280px 720px;
+  grid-template-columns: 280px auto;
   column-gap: 6rem;
+}
+
+.articles {
+  max-width: 720px;
 }
 
 @media only screen and (max-width: 1024px) {
   .main {
     grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main {
+    padding: 0 2rem 2rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main {
+    padding: 0 1rem 1rem 1rem;
   }
 }
 

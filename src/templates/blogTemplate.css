@@ -1,0 +1,14 @@
+@media only screen and (max-width: 600px) {
+  .blog-post-container {
+    grid-row: 1;
+    padding-bottom: 2rem;
+  }
+
+  .blog-post p {
+    margin-bottom: 2rem;
+  }
+
+  .read-more {
+    margin-bottom: 1.5rem !important;
+  }
+}

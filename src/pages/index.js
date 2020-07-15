@@ -1,6 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Introduction from "../components/Introduction"
@@ -9,8 +7,7 @@ import SideBar from "../components/SideBar"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="xinhudesign" />
-
+    <SEO title="Xin Hu Design" />
     <SideBar>
       <Introduction />
     </SideBar>
