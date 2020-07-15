@@ -1,11 +1,19 @@
 module.exports = {
   siteMetadata: {
     title: `XINHUDESIGN`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Xin Hu's UI UX design and Software Development blog`,
     author: `Xin Hu`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `assets`,
+        path: `${__dirname}/static/assets`,
+      },
+    },
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {

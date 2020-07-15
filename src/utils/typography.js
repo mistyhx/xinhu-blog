@@ -15,6 +15,12 @@ const typography = new Typography({
     p: {
       opacity: 0.78,
     },
+
+    pre: {
+      backgroundColor: "var(--codeBg)",
+      borderRadius: `4px`,
+      padding: `1rem`,
+    },
   }),
 })
 
