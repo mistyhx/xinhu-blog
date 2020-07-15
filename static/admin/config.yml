@@ -1,6 +1,7 @@
 backend:
   name: git-gateway
   branch: master
+publish_mode: editorial_workflow
 media_folder: static/assets
 public_folder: /assets
 collections:
@@ -9,11 +10,17 @@ collections:
     folder: content/blog
     create: true
     slug: "index"
-    media_folder: ""
-    public_folder: ""
+    #    media_folder: ""
+    #    public_folder: ""
     path: "{{title}}/index"
     fields:
       - { name: title, label: Title }
       - { name: date, label: Date, widget: datetime }
-      - { name: description, label: Description, widget: "string" }
+      - { name: cover, label: Cover, widget: image, required: false }
+      - {
+          name: description,
+          label: Description,
+          widget: "string",
+          required: false,
+        }
       - { name: body, label: Body, widget: markdown }
