@@ -15,6 +15,7 @@ body {
   --textLink: gray;
   --textLink: black;
   --underlineColor: black;
+  --gridColor: #e5e5e5;
   background-color: var(--bg);
   color: var(--textNormal);
 }
@@ -23,19 +24,26 @@ body.dark {
   --bg: #282c35;
   --textNormal: rgba(255, 255, 255, 0.9);
   --textLink: white;
+  --gridColor: #494949;
   --underlineColor: white;
 }
 
 .layout {
   display: grid;
-  grid-template-rows: 120px auto;
+  grid-template-rows: 160px auto;
 }
 
 .main {
-  padding: 0 4rem;
+  padding: 0 4rem 10rem 4rem;
   display: grid;
-  grid-template-columns: 280px auto;
+  grid-template-columns: 280px 720px;
   column-gap: 6rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
 }
 
 /*html {*/
