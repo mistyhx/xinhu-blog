@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import { Sun, Moon } from "react-feather"
 import MyThemeToggler from "./MyThemeToggler"
 import "./index.css"
 
@@ -43,7 +44,11 @@ const Header = () => {
           </svg>
         </div>
       </Link>
-      <MyThemeToggler />
+      <div style={{ display: "flex", alignItems: "center", width: "136px", justifyContent: "space-between" }}>
+        <Sun />
+        <MyThemeToggler />
+        <Moon />
+      </div>
     </div>
   )
 }
