@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import "./index.css"
 
 const ArticlePreview = ({ data, order }) => {
@@ -16,7 +17,7 @@ const ArticlePreview = ({ data, order }) => {
           <p>{data.frontmatter.date}</p>
         </div>
         <div className="preview-title">
-          <Link to={data.frontmatter.title}>
+          <Link cover to={`/${data.frontmatter.title}`}>
             <h3>{data.frontmatter.title}</h3>
             <div className="underline" style={{ backgroundColor: `var(--underlineColor)` }} />
           </Link>
