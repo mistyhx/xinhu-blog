@@ -3,7 +3,6 @@ import { Link } from "gatsby"
 import "./index.css"
 
 const ArticlePreview = ({ data, order }) => {
-  console.log(order)
   return (
     <div
       className="preview-container"

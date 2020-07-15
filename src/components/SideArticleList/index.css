@@ -1,0 +1,15 @@
+.side-list {
+  list-style-type: none;
+}
+
+.blog-post p {
+  margin-bottom: 3.5rem;
+}
+
+.side-list li {
+  margin-bottom: 2rem;
+}
+
+.side-list p {
+  margin-bottom: 0.5rem;
+}
