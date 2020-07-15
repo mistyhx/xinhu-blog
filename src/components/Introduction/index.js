@@ -11,15 +11,16 @@ const Introduction = () => {
         <a href="https://www.linkedin.com/in/xinhuuidesign/" target="_blank">
           Xin Hu
         </a>
-        , a designer who create design ideas with code. Contact me via <a href="mailto:hxmisty@gmail.com">email</a>
+        , a designer who create design ideas with code. Contact me via{" "}
+        <a href="mailto:hxmisty@gmail.com">hxmisty@gmail.com</a>
       </p>
       <div>
         <h4>Check me out also @:</h4>
         <div className="icon-list">
-          <a href="" target="_blank">
+          <a href="https://github.com/mistyhx/" target="_blank">
             <GithubOutlined />
           </a>
-          <a href="" target="_blank">
+          <a href="https://dribbble.com/mistyhx/" target="_blank">
             <DribbbleOutlined />
           </a>
         </div>
