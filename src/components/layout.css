@@ -63,6 +63,18 @@ body.dark {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .main {
+    padding: 0 2rem 2rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main {
+    padding: 0 1rem 1rem 1rem;
+  }
+}
+
 /*html {*/
 /*  font-family: sans-serif;*/
 /*  -ms-text-size-adjust: 100%;*/
