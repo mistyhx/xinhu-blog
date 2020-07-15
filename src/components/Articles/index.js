@@ -16,7 +16,7 @@ const Articles = ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark
   return (
     <div className="articles">
-      <div className="tabs">
+      <div className="tabs" style={{ visibility: "hidden" }}>
         <Tab title="Blog" />
         <Tab title="Projects" />
         <Tab title="Illustration" />

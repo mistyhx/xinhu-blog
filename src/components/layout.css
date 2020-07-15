@@ -40,6 +40,12 @@ body.dark {
   column-gap: 6rem;
 }
 
+@media only screen and (max-width: 1024px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+}
+
 /*html {*/
 /*  font-family: sans-serif;*/
 /*  -ms-text-size-adjust: 100%;*/
