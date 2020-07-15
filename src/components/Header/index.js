@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { Sun, Moon } from "react-feather"
 import MyThemeToggler from "./MyThemeToggler"
 import "./index.css"
@@ -7,15 +7,9 @@ import "./index.css"
 const Header = () => {
   return (
     <div className="header-content">
-      <Link to="/">
+      <AniLink cover to="/" bg="var(--bg)">
         <div>
-          <svg
-            // style={{ fill: `var(--textNormal)` }}
-            width="166"
-            height="49"
-            viewBox="0 0 166 49"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+          <svg width="166" height="49" viewBox="0 0 166 49" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0)">
               <path
                 d="M7.9 11.2L18.2 13.7L23.9 24.5L34.3 17.6L44 20L27.8 30.2L38.3 48.2L27.7 45.6L21.3 33.8L9.9 41.2L0 38.8L17.6 27.7L7.9 11.2Z"
@@ -43,7 +37,7 @@ const Header = () => {
             {/*</defs>*/}
           </svg>
         </div>
-      </Link>
+      </AniLink>
       <div style={{ display: "flex", alignItems: "center", width: "136px", justifyContent: "space-between" }}>
         <Sun />
         <MyThemeToggler />
