@@ -16,13 +16,13 @@ const Articles = ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark
   return (
     <div className="articles">
-      <div className="tabs" style={{ visibility: "hidden" }}>
+      <div className="tabs">
         <Tab title="Blog" />
         <Tab title="Projects" />
         <Tab title="Illustration" />
       </div>
       <div className="article-list">
-        {posts && posts.map((post, index) => <ArticlePreview order={index+1} key={post.node.id} data={post.node} />)}
+        {posts && posts.map((post, index) => <ArticlePreview order={index + 1} key={post.node.id} data={post.node} />)}
       </div>
     </div>
   )

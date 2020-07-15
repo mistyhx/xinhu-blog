@@ -5,8 +5,14 @@ import "./index.css"
 const ArticlePreview = ({ data, order }) => {
   console.log(order)
   return (
-    <div className="preview-container" style={{ flexDirection: `${order % 2 == 0 && "row-reverse"}` }}>
-      <div className="preview-info" style={{ borderWidth: `${order % 2 != 0 && "0"}` }}>
+    <div
+      className="preview-container"
+      style={{ flexDirection: `${order % 2 == 0 && "row-reverse"}`, borderColor: "var(--gridColor)" }}
+    >
+      <div
+        className="preview-info"
+        style={{ borderWidth: `${order % 2 != 0 && "0"}`, borderColor: "var(--gridColor)" }}
+      >
         <div className="preview-date">
           <p>{data.frontmatter.date}</p>
         </div>
@@ -21,7 +27,10 @@ const ArticlePreview = ({ data, order }) => {
           <p>{data.frontmatter.description}</p>
         </div>
       </div>
-      <div className="preview-empty" style={{ borderWidth: `${order % 2 == 0 && "0"}` }}></div>
+      <div
+        className="preview-empty"
+        style={{ borderWidth: `${order % 2 == 0 && "0"}`, borderColor: "var(--gridColor)" }}
+      ></div>
     </div>
   )
 }

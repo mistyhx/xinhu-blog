@@ -15,6 +15,7 @@ body {
   --textLink: gray;
   --textLink: black;
   --underlineColor: black;
+  --gridColor: #e5e5e5;
   background-color: var(--bg);
   color: var(--textNormal);
 }
@@ -23,6 +24,7 @@ body.dark {
   --bg: #282c35;
   --textNormal: rgba(255, 255, 255, 0.9);
   --textLink: white;
+  --gridColor: #494949;
   --underlineColor: white;
 }
 
