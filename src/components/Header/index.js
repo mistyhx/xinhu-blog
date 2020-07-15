@@ -1,12 +1,13 @@
 import React from "react"
 import MyThemeToggler from "./MyThemeToggler"
+import logo from "../../images/logo.svg"
 import "./index.css"
 
 const Header = () => {
   return (
     <div className="header-content">
       <div>
-        <h3>XINHUDESIGN</h3>
+        <img alt="xinhudesign" src={logo} />
       </div>
       <MyThemeToggler />
     </div>

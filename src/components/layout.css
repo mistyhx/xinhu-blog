@@ -28,7 +28,7 @@ body.dark {
 
 .layout {
   display: grid;
-  grid-template-rows: 120px auto;
+  grid-template-rows: 160px auto;
 }
 
 .main {
