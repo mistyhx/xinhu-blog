@@ -16,6 +16,7 @@ body {
   --textLink: black;
   --underlineColor: black;
   --gridColor: #e5e5e5;
+  --codeBg: #f6f5f1;
   background-color: var(--bg);
   color: var(--textNormal);
 }
@@ -26,6 +27,7 @@ body.dark {
   --textLink: white;
   --gridColor: #494949;
   --underlineColor: white;
+  --codeBg: black;
 }
 
 .layout {
