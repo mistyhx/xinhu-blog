@@ -28,6 +28,7 @@ export default function BlogTemplate({ data }) {
             {frontmatter.date}
           </p>
           <h1>{frontmatter.title}</h1>
+          {frontmatter.featuredImage && <Img fluid={frontmatter.featuredImage.childImageSharp.fluid} />}
           <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: html }} />
         </div>
       </div>
