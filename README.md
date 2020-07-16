@@ -1,16 +1,17 @@
 # XIN HU BLOG
 
 ## Introduction
-I created this simple blog with gatsby to record my thoughts. 
 
-## Development Mode 
+I created this simple blog with gatsby to record my thoughts.
 
-To run the app locally 
-```gatsby develop```
-## 💫 Deploy
+## Development Mode
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+To run the app locally
+`gatsby develop`
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/gatsbyjs/gatsby-starter-default)
+## Learning
+
+1. Images could be loaded using graphql lazy loading instead of pass the data from parent
+2. Components need to be wrapped in the static query component, while templates and pages can directly use the graphql API
 
 <!-- AUTO-GENERATED-CONTENT:END -->

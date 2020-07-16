@@ -7,7 +7,7 @@ import SideBar from "../components/SideBar"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Xin Hu Design" />
+    <SEO title="Home" />
     <SideBar>
       <Introduction />
     </SideBar>

@@ -4,7 +4,6 @@ import "./index.css"
 
 const SideArticles = ({ data, id }) => {
   const { edges: posts } = data.allMarkdownRemark
-  console.log(id)
   return (
     <ul className="side-list">
       {posts &&
