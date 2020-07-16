@@ -7,4 +7,4 @@ featuredImage: fruit.jpg
 
 sdsdsadadad
 
-![test](fruit.jpg "test")
+![test](./fruit.jpg "test")
