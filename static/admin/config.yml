@@ -1,7 +1,8 @@
 backend:
   name: git-gateway
   branch: master
-#publish_mode: editorial_workflow
+site_url: https://www.xinhudesign.com
+publish_mode: editorial_workflow
 media_folder: static/assets
 public_folder: /assets
 collections:
@@ -9,7 +10,7 @@ collections:
     label: Blog
     folder: content/blog
     create: true
-    slug: "index"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     media_folder: ""
     public_folder: ""
     path: "{{title}}/index"
@@ -28,4 +29,5 @@ collections:
           widget: "string",
           required: false,
         }
+      - { name: draft, label: Draft, widget: "boolean", default: false }
       - { name: body, label: Body, widget: markdown }
