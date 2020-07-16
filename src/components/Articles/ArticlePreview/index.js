@@ -7,11 +7,11 @@ const ArticlePreview = ({ data, order }) => {
   return (
     <div
       className="preview-container"
-      style={{ flexDirection: `${order % 2 == 0 && "row-reverse"}`, borderColor: "var(--gridColor)" }}
+      style={{ flexDirection: `${order % 2 === 0 && "row-reverse"}`, borderColor: "var(--gridColor)" }}
     >
       <div
         className="preview-info"
-        style={{ borderWidth: `${order % 2 != 0 && "0"}`, borderColor: "var(--gridColor)" }}
+        style={{ borderWidth: `${order % 2 !== 0 && "0"}`, borderColor: "var(--gridColor)" }}
       >
         <div className="preview-date">
           <p>{data.frontmatter.date}</p>
@@ -29,7 +29,7 @@ const ArticlePreview = ({ data, order }) => {
       </div>
       <div
         className="preview-empty"
-        style={{ borderWidth: `${order % 2 == 0 && "0"}`, borderColor: "var(--gridColor)" }}
+        style={{ borderWidth: `${order % 2 === 0 && "0"}`, borderColor: "var(--gridColor)" }}
       ></div>
     </div>
   )
