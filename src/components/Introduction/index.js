@@ -6,7 +6,7 @@ const Introduction = () => {
   return (
     <div>
       <h2 style={{ marginBottom: `3.5rem` }}>
-        <span role="image" aria-lable="greeting">
+        <span role="icon" aria-label="greeting">
           👋{" "}
         </span>
         Hi There,
