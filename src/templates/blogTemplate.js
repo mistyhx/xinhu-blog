@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import SideBar from "../components/SideBar"
 import SideArticleList from "../components/SideArticleList"
+import Img from "gatsby-image"
 import "./blogTemplate.css"
 
 export default function BlogTemplate({ data }) {
@@ -42,6 +43,13 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         description
+        featuredImage {
+          childImageSharp {
+            fluid(maxWidth: 800) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }
