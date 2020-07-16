@@ -5,10 +5,15 @@ import "./index.css"
 const Introduction = () => {
   return (
     <div>
-      <h2 style={{ marginBottom: `3.5rem` }}>👋 Hi There,</h2>
+      <h2 style={{ marginBottom: `3.5rem` }}>
+        <span role="image" aria-lable="greeting">
+          👋{" "}
+        </span>
+        Hi There,
+      </h2>
       <p>
         I am {""}
-        <a href="https://www.linkedin.com/in/xinhuuidesign/" target="_blank">
+        <a href="https://www.linkedin.com/in/xinhuuidesign/" target="_blank" rel="external">
           Xin Hu
         </a>
         , a designer who create design ideas with code. Contact me via{" "}
@@ -17,11 +22,11 @@ const Introduction = () => {
       <div>
         <h4>Check me out also @:</h4>
         <div className="icon-list">
-          <a href="https://github.com/mistyhx/" target="_blank">
-            <GithubOutlined />
+          <a href="https://github.com/mistyhx/" target="_blank" rel="external">
+            <GithubOutlined style={{ fontSize: 32, paddingRight: `1rem` }} />
           </a>
-          <a href="https://dribbble.com/mistyhx/" target="_blank">
-            <DribbbleOutlined />
+          <a href="https://dribbble.com/mistyhx/" target="_blank" rel="external">
+            <DribbbleOutlined style={{ fontSize: 32 }} />
           </a>
         </div>
       </div>
