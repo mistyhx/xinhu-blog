@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
-import TransitionLink from "gatsby-plugin-transition-link"
+
 import "./index.css"
 
 const ArticlePreview = ({ data, order }) => {
@@ -15,9 +15,9 @@ const ArticlePreview = ({ data, order }) => {
         style={{ borderWidth: `${order % 2 !== 0 && "0"}`, borderColor: "var(--gridColor)" }}
       >
         {data.frontmatter.featuredImage && (
-          <TransitionLink to={data.frontmatter.title}>
+          <Link to={data.frontmatter.title}>
             <Img fluid={data.frontmatter.featuredImage.childImageSharp.fluid} />
-          </TransitionLink>
+          </Link>
         )}
         <div className="preview-date">
           <p>{data.frontmatter.date}</p>

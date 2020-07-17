@@ -1,3 +1,16 @@
+.blog-post-container {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .blog-post-container {
     grid-row: 1;

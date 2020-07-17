@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import SideBar from "../components/SideBar"
 import SideArticleList from "../components/SideArticleList"
+import PageTransition from "gatsby-plugin-page-transitions"
 import Img from "gatsby-image"
 import "./blogTemplate.css"
 
@@ -27,7 +28,7 @@ export default function BlogTemplate({ data }) {
           <p className="blog-date" style={{ opacity: 0.5 }}>
             {frontmatter.date}
           </p>
-          <h1>{frontmatter.title}</h1>
+          <h1 className="blog-title">{frontmatter.title}</h1>
           {frontmatter.featuredImage && <Img fluid={frontmatter.featuredImage.childImageSharp.fluid} />}
           <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: html }} />
         </div>
