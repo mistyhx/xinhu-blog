@@ -25,4 +25,4 @@ In order to start the a Gatsby project, I had to install it globally. The offici
 Once I have the basic project set up, I created the static pages under the 
 ``` src/pages ``` directory once you initiated your project with Gatsby. You can write anything like in any other React app. 
 
-Then I added ``` blogTemplate.js ``` to the  ``` src/templates ``` directory
+Then I added ``` blogTemplate.js ``` to the  ``` src/templates ``` directory for  dynamically generated pages. Gatsby is capable of generating static pages by sourcing data from other APIs. Gatsby websites are super fast because it already requested data from the server and build the site before the user visit it. 
