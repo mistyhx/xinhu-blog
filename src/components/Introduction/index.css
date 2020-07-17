@@ -3,3 +3,11 @@
   width: 56px;
   justify-content: space-between;
 }
+
+.active {
+  color: red;
+}
+
+.not-active {
+  color: blue;
+}

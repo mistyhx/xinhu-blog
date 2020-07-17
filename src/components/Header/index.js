@@ -38,7 +38,10 @@ const Header = () => {
           </svg>
         </div>
       </AniLink>
-      <div style={{ display: "flex", alignItems: "center", width: "136px", justifyContent: "space-between" }}>
+      <div
+        className="toggler"
+        style={{ display: "flex", alignItems: "center", width: "136px", justifyContent: "space-between" }}
+      >
         <Sun />
         <MyThemeToggler />
         <Moon />

@@ -1,13 +1,23 @@
-.blog-post-container {
-  animation: fadeIn 1s ease-in-out;
+.wrapper {
+  position: relative;
+}
+.cover {
+  position: absolute;
+  background-color: white;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  z-index: 99;
+  animation: fadeOut 1s ease-in-out;
 }
 
-@keyframes fadeIn {
+@keyframes fadeOut {
   from {
-    opacity: 0;
+    width: 100%;
   }
+
   to {
-    opacity: 1;
+    width: 0;
   }
 }
 
