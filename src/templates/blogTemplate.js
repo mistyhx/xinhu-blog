@@ -11,28 +11,31 @@ export default function BlogTemplate({ data }) {
   const { markdownRemark } = data
   const { frontmatter, html, id } = markdownRemark
   return (
-    <Layout>
-      <SEO title={frontmatter.title} />
-      <SideBar>
-        <h2 className="read-more" style={{ marginBottom: `3.5rem` }}>
-          <span role="icon" arial-label="read">
-            👀{" "}
-          </span>
-          Read More
-        </h2>
-        <SideArticleList id={id} />
-      </SideBar>
-      <div className="blog-post-container">
-        <div className="blog-post">
-          <p className="blog-date" style={{ opacity: 0.5 }}>
-            {frontmatter.date}
-          </p>
-          <h1 className="blog-title">{frontmatter.title}</h1>
-          {frontmatter.featuredImage && <Img fluid={frontmatter.featuredImage.childImageSharp.fluid} />}
-          <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: html }} />
+    <div className="wrapper">
+      <Layout>
+        <SEO title={frontmatter.title} />
+        <SideBar>
+          <h2 className="read-more" style={{ marginBottom: `3.5rem` }}>
+            <span role="icon" arial-label="read">
+              👀{" "}
+            </span>
+            Read More
+          </h2>
+          <SideArticleList id={id} />
+        </SideBar>
+        <div className="blog-post-container">
+          <div className="blog-post">
+            <p className="blog-date" style={{ opacity: 0.5 }}>
+              {frontmatter.date}
+            </p>
+            <h1 className="blog-title">{frontmatter.title}</h1>
+            {frontmatter.featuredImage && <Img fluid={frontmatter.featuredImage.childImageSharp.fluid} />}
+            <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: html }} />
+          </div>
         </div>
-      </div>
-    </Layout>
+      </Layout>
+      <div className="cover" />
+    </div>
   )
 }
 export const pageQuery = graphql`
