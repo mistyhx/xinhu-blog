@@ -3,7 +3,6 @@ import { GithubOutlined, DribbbleOutlined } from "@ant-design/icons"
 import "./index.css"
 
 const Introduction = () => {
-  const [active, setActive] = useState(false)
   return (
     <div>
       <h2 style={{ marginBottom: `3.5rem` }}>
