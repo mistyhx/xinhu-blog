@@ -17,4 +17,4 @@ In the past I have used platforms such as Wordpress and SquareSpace to host my p
 ![website-performance](performance.png "website performance")
 
 ## Step 1 - Initiate your Gatsby project 
-In order to start the a Gatsby project, you need to install it globally. The official website has a very straight forward [tutorial](https://www.gatsbyjs.org/docs/quick-start), so it would be redundant for me to repeat that process. In this article, I will skip the straight forward pieces and provide a link to the official guidance, and explain the areas that is more confusing. 
+In order to start the a Gatsby project, you need to install it globally. The official website has a very straight forward [tutorial](https://www.gatsbyjs.org/docs/quick-start), so it would be redundant for me to repeat that process. In this article, I will skip the straight forward pieces and provide a link to the official guidance, and explain the areas that was more confusing. 
