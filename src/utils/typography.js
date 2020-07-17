@@ -2,9 +2,15 @@ import Typography from "typography"
 import "../components/layout.css"
 
 const typography = new Typography({
+  googleFonts: [
+    {
+      name: "Inconsolata",
+      styles: ["300", "400", "500", "600", "700"],
+    },
+  ],
   baseFontSize: "18px",
   headerFontFamily: ["Helvetica", "sans-serif"],
-  bodyFontFamily: ["Helvetica", "sans-serif"],
+  bodyFontFamily: ["Inconsolata", "monospace"],
   baseLineHeight: 1.8,
   overrideStyles: () => ({
     a: {
