@@ -23,7 +23,7 @@ const ArticlePreview = ({ data, order }) => {
           <p>{data.frontmatter.date}</p>
         </div>
         <div className="preview-title">
-          <Link cover to={`/${data.frontmatter.title}`}>
+          <Link to={data.frontmatter.title}>
             <h3>{data.frontmatter.title}</h3>
             <div className="underline" style={{ backgroundColor: `var(--underlineColor)` }} />
           </Link>
