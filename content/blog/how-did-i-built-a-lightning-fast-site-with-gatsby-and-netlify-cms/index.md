@@ -21,8 +21,20 @@ In the past I have used platforms such as Wordpress and SquareSpace to host my p
 
 In order to start the a Gatsby project, I had to install it globally. The official website has a very straight forward [tutorial](https://www.gatsbyjs.org/docs/quick-start), so it would be redundant for me to repeat that process. In this article, I will skip the straight forward pieces and provide a link to the official guidance, and explain the areas that was more confusing. 
 
-## Step 2 - Create a basic layout for your website
+## Step 2 - Create the basic UI layout for your website
 Once I have the basic project set up, I created the static pages under the 
 ``` src/pages ``` directory once you initiated your project with Gatsby. You can write anything like in any other React app. 
 
-Then I added ``` blogTemplate.js ``` to the  ``` src/templates ``` directory for  dynamically generated pages. Gatsby is capable of generating static pages by sourcing data from other APIs. Gatsby websites are super fast because it already requested data from the server and build the site before the user visit it. 
+Then I added ``` blogTemplate.js ``` to the  ``` src/templates ``` directory to dynamically generate pages for my blog. I put some place holder text there to design the layout. Gatsby is capable of generating static pages by sourcing data from other resources such as the Netlify CMS system and many other APIs. Gatsby websites are blazing fast because it embraces both the advantages of static website and single page applications, it generates static pages on the fly. 
+
+## Step 3 - Integrate the CMS system 
+Once I have build up a static layout of my web page, it was time to replace it with dynamic content.
+
+3.1 First you need to install the Netlify CMS plugin  by using 
+``` yarn add netlify-cms-app gatsby-plugin-netlify-cms ```
+
+3.2 And then in the ```gatby.config.js``` file add the following module to register it. 
+
+3.3 If you wish to source also images from CMS system i
+
+
