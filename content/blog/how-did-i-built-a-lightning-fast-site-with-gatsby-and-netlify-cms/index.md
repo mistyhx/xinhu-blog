@@ -23,8 +23,6 @@ In order to start the a Gatsby project, I had to install it globally. The offici
 
 ## Step 2 - Create a basic layout for your website
 Once I have the basic project set up, I created the static pages under the 
-> src/pages
+``` src/pages ``` directory once you initiated your project with Gatsby. You can write anything like in any other React app. 
 
-directory once you initiated your project with Gatsby. You can write anything like in any other React app. 
-
-Then I added ``` blogTemplate.js ```
+Then I added ``` blogTemplate.js ``` to the  ``` src/templates ``` directory
