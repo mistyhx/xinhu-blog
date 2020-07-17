@@ -34,7 +34,7 @@ export default function BlogTemplate({ data }) {
           </div>
         </div>
       </Layout>
-      <div className="cover" />
+      <div className="cover" style={{ backgroundColor: "var(--bg)" }} />
     </div>
   )
 }
