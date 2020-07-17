@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
+
 import "./index.css"
 
 const ArticlePreview = ({ data, order }) => {
@@ -14,12 +14,16 @@ const ArticlePreview = ({ data, order }) => {
         className="preview-info"
         style={{ borderWidth: `${order % 2 !== 0 && "0"}`, borderColor: "var(--gridColor)" }}
       >
-        {data.frontmatter.featuredImage && <Img fluid={data.frontmatter.featuredImage.childImageSharp.fluid} />}
+        {data.frontmatter.featuredImage && (
+          <Link to={data.frontmatter.title}>
+            <Img fluid={data.frontmatter.featuredImage.childImageSharp.fluid} />
+          </Link>
+        )}
         <div className="preview-date">
           <p>{data.frontmatter.date}</p>
         </div>
         <div className="preview-title">
-          <Link cover to={`/${data.frontmatter.title}`}>
+          <Link to={data.frontmatter.title}>
             <h3>{data.frontmatter.title}</h3>
             <div className="underline" style={{ backgroundColor: `var(--underlineColor)` }} />
           </Link>
