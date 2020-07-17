@@ -17,4 +17,14 @@ In the past I have used platforms such as Wordpress and SquareSpace to host my p
 ![website-performance](performance.png "website performance")
 
 ## Step 1 - Initiate your Gatsby project 
-In order to start the a Gatsby project, you need to install it globally. The official website has a very straight forward [tutorial](https://www.gatsbyjs.org/docs/quick-start), so it would be redundant for me to repeat that process. In this article, I will skip the straight forward pieces and provide a link to the official guidance, and explain the areas that was more confusing. 
+<em>Before you read through the article, I assume that you have basic knowledge of React. Because the Gatsby framework is based on React. </em>
+
+In order to start the a Gatsby project, I had to install it globally. The official website has a very straight forward [tutorial](https://www.gatsbyjs.org/docs/quick-start), so it would be redundant for me to repeat that process. In this article, I will skip the straight forward pieces and provide a link to the official guidance, and explain the areas that was more confusing. 
+
+## Step 2 - Create a basic layout for your website
+Once I have the basic project set up, I created the static pages under the 
+> src/pages
+
+directory once you initiated your project with Gatsby. You can write anything like in any other React app. 
+
+Then I added ``` blogTemplate.js ```
