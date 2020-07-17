@@ -54,7 +54,7 @@ body.dark {
 }
 
 .articles {
-  max-width: 720px;
+  max-width: 960px;
 }
 
 @media only screen and (max-width: 1024px) {
