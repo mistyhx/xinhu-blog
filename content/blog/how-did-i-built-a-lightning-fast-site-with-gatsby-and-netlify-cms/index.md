@@ -84,16 +84,36 @@ Once it is deployed, by logging into your **deployewebsite.com/admin**, you can 
 
 ## Step 4 - Transformer markdown to pages 
 
-What the Netlify CMS does it automatically saved the content you created to your github repo in a markdown format. So now you need to transform it to a html page with the previous ```blogTemplate.js``` you created. So 
-Since we also attached images to the website through the CMS system, I also added the following plugin. 
-``` yarn add gatsby-image gatsby-transformer-sharp gatsby-plugin-sharp ``` and register them in the ```gatsby.config.js```
+What the Netlify CMS does it automatically saved the content you created to your github repo in a markdown format. So now you need to transform it to a html page with the previous ```blogTemplate.js``` you created. 
 
+In order to do that you need to add ```yarn add gatsby-source-filesystem``` to help the Gatsby know where to find the files to transfer and ```yarn add gatsby-transformer-remark ``` to recognize the markdown file. Since I also attached images to the website through the CMS system, I need the following plugin as well ``` yarn add gatsby-image gatsby-transformer-sharp gatsby-plugin-sharp``` 
+
+Then I registered them in the ```gatsby.config.js```
+
+```
 module.exports = {
   plugins: [
+    //This plugin is to process images to web format, making them responsive
     `gatsby-plugin-sharp`,
+   //This plugin is to allow Gatsby's graphql api to read the image. 
     `gatsby-transformer-sharp`,
+ 
+    // This allow gatsby parse markdown file
+    `gatsby-transformer-remark`,
+  
+      //This will let gatsby know where to find the files to parse.
+
+   {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blog`,
+        path: `${__dirname}/content/blog`,
+      },
+    },
+
   ],
 }
+```
 
 
 
