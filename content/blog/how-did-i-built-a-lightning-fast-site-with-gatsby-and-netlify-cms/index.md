@@ -84,7 +84,8 @@ Once it is deployed, by logging into your **deployewebsite.com/admin**, you can 
 
 ## Step 4 - Transformer markdown to pages 
 
-If you also want to attach images to your website through the CMS system, you also need to install add the following plugin. 
+What the Netlify CMS does it automatically saved the content you created to your github repo in a markdown format. So now you need to transform it to a html page with the previous ```blogTemplate.js``` you created. So 
+Since we also attached images to the website through the CMS system, I also added the following plugin. 
 ``` yarn add gatsby-image gatsby-transformer-sharp gatsby-plugin-sharp ``` and register them in the ```gatsby.config.js```
 
 module.exports = {
