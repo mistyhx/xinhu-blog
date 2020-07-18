@@ -30,10 +30,12 @@ Then I added ``` blogTemplate.js ``` to the  ``` src/templates ``` directory to 
 ## Step 3 - Integrate the CMS system 
 Once I have build up a static layout of my web page, it was time to replace it with dynamic content.
 
-3.1 First you need to install the Netlify CMS plugin  by using 
+3.1
+First you need to install the Netlify CMS plugin  by using 
 ``` yarn add netlify-cms-app gatsby-plugin-netlify-cms ```
 
-3.2 And then in the ```gatsby.config.js``` file add the following module to register it. 
+3.2 
+And then in the ```gatsby.config.js``` file add the following module to register it. 
 
 ``` 
 module.exports = {
@@ -41,9 +43,11 @@ module.exports = {
 } 
 ```
 
-3.3 Now you can create a folder in the app to store your content. I created a folder under the root directory ```content/blog/```, but you can also put it under the ```src/pages``` directory. 
+3.3 
+Now you can create a folder in the app to store your content. I created a folder under the root directory ```content/blog/```, but you can also put it under the ```src/pages``` directory. 
 
-3.4 Then create two new directories ```static/admin``` to store your ```config.yml``` file and a ```static/assets``` directory to store assets uploaded from the CMS system. In the ``` config.yml ```, this is my configuration. 
+3.4 
+Then create two new directories ```static/admin``` to store your ```config.yml``` file and a ```static/assets``` directory to store assets uploaded from the CMS system. In the ``` config.yml ```, this is my configuration. 
 
 ``` 
 backend:
@@ -86,6 +90,7 @@ Once it is deployed, by logging into your **deployewebsite.com/admin**, you can 
 
 What the Netlify CMS does it automatically saved the content you created to your github repo in a markdown format. So now you need to transform it to a html page with the previous ```blogTemplate.js``` you created. 
 
+4.1 
 In order to do that you need to add ```yarn add gatsby-source-filesystem``` to help the Gatsby know where to find the files to transfer and ```yarn add gatsby-transformer-remark ``` to recognize the markdown file. Since I also attached images to the website through the CMS system, I need the following plugin as well ``` yarn add gatsby-image gatsby-transformer-sharp gatsby-plugin-sharp``` 
 
 Then I registered them in the ```gatsby.config.js```
@@ -115,5 +120,58 @@ module.exports = {
 }
 ```
 
+4.2 
+Now you can query the data in your blog template. 
+```
+
+import React from "react"
+import { graphql } from "gatsby"
+import Layout from "../components/layout"
+import Img from "gatsby-image"
+import "./blogTemplate.css"
+
+
+export default function BlogTemplate({ data }) {
+  const { markdownRemark } = data
+  const { frontmatter, html, id } = markdownRemark
+  return (
+    <div className="wrapper">
+      <Layout>
+        <div className="blog-post-container">
+          <div className="blog-post">
+            <p className="blog-date" style={{ opacity: 0.5 }}>
+              {frontmatter.date}
+            </p>
+            <h1 className="blog-title">{frontmatter.title}</h1>
+            {frontmatter.featuredImage && <Img fluid={frontmatter.featuredImage.childImageSharp.fluid} />}
+            <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: html }} />
+          </div>
+        </div>
+      </Layout>
+      <div className="cover" style={{ backgroundColor: "var(--bg)" }} />
+    </div>
+  )
+}
+export const pageQuery = graphql`
+  query BlogPostByID($id: String!) {
+    markdownRemark(id: { eq: $id }) {
+      id
+      html
+      frontmatter {
+        date(formatString: "MMMM DD, YYYY")
+        title
+        description
+        featuredImage {
+          childImageSharp {
+            fluid(maxWidth: 800) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+  }
+
+```
 
 
