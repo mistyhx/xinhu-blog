@@ -217,7 +217,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   })
 }
 ```
-
-4.
+5. Run the app 
+Now if you run the app with ```gatsby develop```
 
 
