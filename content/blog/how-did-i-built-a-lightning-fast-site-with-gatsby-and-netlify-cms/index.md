@@ -216,7 +216,65 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     })
   })
 }
+
 ```
+
+4.3 
+The pages are created, but there is not a good way to navigate to it, so you need to create a list to show the different links. 
+
+```
+import React from "react"
+import { StaticQuery, graphql, Link } from "gatsby"
+import "./index.css"
+
+const Articles = ({ data, id }) => {
+  const { edges: posts } = data.allMarkdownRemark
+  return (
+    <ul className="list">
+      {posts &&
+        posts.map(post => (
+          <li key={post.node.id} style={{ display: `${post.node.id === id && "none"}` }}>
+            <p style={{ opacity: 0.5 }}>{post.node.frontmatter.date}</p>
+            <Link to={`/${post.node.frontmatter.title}`}>
+              <h4>{post.node.frontmatter.title}</h4>
+            </Link>
+          </li>
+        ))}
+    </ul>
+  )
+}
+
+export default function ArticleList(props) {
+  //non page components need to query using Static Query
+  return (
+    <StaticQuery
+      query={graphql`
+        query {
+          allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
+            edges {
+              node {
+                id
+                frontmatter {
+                  title
+                  date(formatString: "MMMM DD, YYYY")
+                }
+              }
+            }
+          }
+        }
+      `}
+      render={data => <SideArticles data={data} {...props} />}
+    />
+  )
+}
+```
+I used the StaticQuery component here, because I stored this file under the component directory instead of the default pages directly. Gatsby graphql query can not be directly used in the component directory. 
+
 5. Run the app 
-Now if you run the app with ```gatsby develop```, you can see all the new pages have been created and you can access them b
+Now if you run the app with ```gatsby develop```, you can see all the new pages have been created and you can access them by clicking on the links. 
+
+Now you can write more articles and enjoy the blazing fast blog. 
+
+
+
 
