@@ -174,4 +174,50 @@ export const pageQuery = graphql`
 
 ```
 
+4.3 
+Then utilize the createPages API from Gatsby to auto generate the pages. In the ```gatsby.node.js``` file, add the following
+
+```
+exports.createPages = async ({ actions, graphql, reporter }) => {
+  const { createPage } = actions
+
+  const blogPostTemplate = require.resolve(`./src/templates/blogTemplate.js`)
+
+  const result = await graphql(`
+    {
+      allMarkdownRemark(limit: 100, sort: { fields: frontmatter___date, order: DESC }) {
+        edges {
+          node {
+            id
+            frontmatter {
+              title
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  // Handle errors
+  if (result.errors) {
+    reporter.panicOnBuild(`Error while running GraphQL query.`)
+    return
+  }
+
+  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    const id = node.id
+    createPage({
+      path: node.frontmatter.title,
+      component: blogPostTemplate,
+      context: {
+        id,
+        // additional data can be passed via context
+      },
+    })
+  })
+}
+```
+
+4.
+
 
