@@ -8,7 +8,7 @@ draft: true
 ---
 ## Introduction
 
-Gatsby and Netlify CMS work perfectly together to create high performance and fast speed static websites. This article is a tutorial on how to build a blog with these technologies from scratch.
+Gatsby and Netlify CMS work perfectly together to create high performance and fast speed static websites. This article is a tutorial on how to build a blog with these technologies from scratch. The result is this website that you are reading now. 
 
 ## Switching from templates platforms to Gatsby
 
@@ -43,10 +43,43 @@ module.exports = {
 
 3.3 Now you can create a folder in the app to store your content. I created a folder under the root directory ```content/blog/```, but you can also put it under the ```src/pages``` directory. 
 
-3.4 The create a static 
+3.4 Then create two new directories ```static/admin``` to store your ```config.yml``` file and a ```static/assets``` directory to store assets uploaded from the CMS system. In the ``` config.yml ```, this is my configuration. 
 
+``` 
+backend:
+  name: git-gateway
+  branch: master
+site_url: https://www.xinhudesign.com
+media_folder: static/assets
+public_folder: /assets
+collections:
+  - name: blog
+    label: Blog
+    folder: content/blog
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    media_folder: ""
+    public_folder: ""
+    path: "{{title}}/index"
+    fields:
+      - { name: title, label: Title }
+      - { name: date, label: Date, widget: datetime }
+      - {
+          name: featuredImage,
+          label: Featured Image,
+          widget: image,
+          required: false,
+        }
+      - {
+          name: description,
+          label: Description,
+          widget: "string",
+          required: false,
+        }
+      - { name: body, label: Body, widget: markdown }
+```
 
-## Step 4 - Transformer markdown to 
+## Step 4 - Transformer markdown to pages 
 
 If you also want to attach images to your website through the CMS system, you also need to install add the following plugin. 
 ``` yarn add gatsby-image gatsby-transformer-sharp gatsby-plugin-sharp ``` and register them in the ```gatsby.config.js```
