@@ -78,6 +78,7 @@ collections:
         }
       - { name: body, label: Body, widget: markdown }
 ```
+You can replace the backend repo name from **git-gateway** to **test-repo** if you just want to test out the UI. You can write and upload files in the test mode, but nothing is really going to be saved and published. If you want to really run the app. You need to save the content to a service like Github and deploy it.  The most convenient way is to add your project to Github and connect your repo to Netlify, which will easily handle the authentication and auto deployment. [Start with Netlify](https://app.netlify.com/start) to deploy your project to a serve. And for the authentication part there are very specific documentations on Netlify as well. [Authentication](https://docs.netlify.com/visitor-access/git-gateway/)
 
 ## Step 4 - Transformer markdown to pages 
 
