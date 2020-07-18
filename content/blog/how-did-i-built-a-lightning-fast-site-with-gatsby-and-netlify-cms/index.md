@@ -278,5 +278,5 @@ Now you can write more articles and enjoy the blazing fast blog.
 
 ## Conclusion 
 
-Even I have been developing React Apps for a while, this is the first time that I really used 
+Even I have been developing React Apps for a while, this is the first time that I really used Gatsby so extensively. There are many starter template that you can begin with, therefore it is not necessary to make all these configurations. However, it is fun to start a simple project like this from scratch because it really helped me to understand the essential foundation of this framework. I encountered a lot of bugs and holes along the way that helped me understand the critical pieces of it and would give me much more flexibility in the future. A lot of 
 
