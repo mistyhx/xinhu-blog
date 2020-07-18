@@ -1,5 +1,5 @@
 ---
-title: How did I built a lightning fast site with Gatsby and Netlify CMS
+title: How did I built a lightning fast site with Gatsby and Netlify CMS From Scratch
 date: 2020-07-17T19:36:35.241Z
 description: "Gatsby and Netlify CMS work perfectly together to create high
   performance and fast speed static websites. This article is a tutorial on how
@@ -16,12 +16,12 @@ In the past I have used platforms such as Wordpress and SquareSpace to host my p
 
 ![website-performance](performance.png "website performance")
 
-## Step 1 - Initiate your Gatsby project 
+## Step 1 - Initiate Gatsby project 
 <em>Before you read through the article, I assume that you have basic knowledge of React. Because the Gatsby framework is based on React. </em>
 
 In order to start the a Gatsby project, I had to install it globally. The official website has a very straight forward [tutorial](https://www.gatsbyjs.org/docs/quick-start), so it would be redundant for me to repeat that process. In this article, I will skip the straight forward pieces and provide a link to the official guidance, and explain the areas that was more confusing. 
 
-## Step 2 - Create the basic UI layout for your website
+## Step 2 - Create the basic UI layout with React
 Once I have the basic project set up, I created the static pages under the 
 ``` src/pages ``` directory once you initiated your project with Gatsby. You can write anything like in any other React app. 
 
@@ -33,8 +33,30 @@ Once I have build up a static layout of my web page, it was time to replace it w
 3.1 First you need to install the Netlify CMS plugin  by using 
 ``` yarn add netlify-cms-app gatsby-plugin-netlify-cms ```
 
-3.2 And then in the ```gatby.config.js``` file add the following module to register it. 
+3.2 And then in the ```gatsby.config.js``` file add the following module to register it. 
 
-3.3 If you wish to source also images from CMS system i
+``` 
+module.exports = {
+  plugins: [`gatsby-plugin-netlify-cms`],
+} 
+```
+
+3.3 Now you can create a folder in the app to store your content. I created a folder under the root directory ```content/blog/```, but you can also put it under the ```src/pages``` directory. 
+
+3.4 The create a static 
+
+
+## Step 4 - Transformer markdown to 
+
+If you also want to attach images to your website through the CMS system, you also need to install add the following plugin. 
+``` yarn add gatsby-image gatsby-transformer-sharp gatsby-plugin-sharp ``` and register them in the ```gatsby.config.js```
+
+module.exports = {
+  plugins: [
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+  ],
+}
+
 
 
