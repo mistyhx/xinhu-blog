@@ -49,7 +49,7 @@ Now you can create a folder in the app to store your content. I created a folder
 ### 3.4 YML File
 Then create two new directories ```static/admin``` to store your ```config.yml``` file and a ```static/assets``` directory to store assets uploaded from the CMS system. In the ``` config.yml ```, this is my configuration. 
 
-``` 
+``` yaml
 backend:
   name: git-gateway
   branch: master
@@ -95,7 +95,7 @@ In order to do that you need to add ```yarn add gatsby-source-filesystem``` to h
 
 Then I registered them in the ```gatsby.config.js```
 
-```
+```javascript
 module.exports = {
   plugins: [
     //This plugin is to process images to web format, making them responsive
@@ -122,8 +122,7 @@ module.exports = {
 
 ### 4.2 Query Data
 Now you can query the data in your blog template. 
-```
-
+```javascript
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
@@ -174,10 +173,12 @@ export const pageQuery = graphql`
 
 ```
 
+
+
 ### 4.3  CreatePages API
 Then utilize the createPages API from Gatsby to auto generate the pages. In the ```gatsby.node.js``` file, add the following
 
-```
+```javascript
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
 
@@ -222,7 +223,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 ### 4.4 Link List
 The pages are created, but there is not a good way to navigate to it, so you need to create a list to show the different links. 
 
-```
+```javascript
 import React from "react"
 import { StaticQuery, graphql, Link } from "gatsby"
 import "./index.css"
