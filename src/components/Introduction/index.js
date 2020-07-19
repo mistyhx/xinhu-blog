@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import { GithubOutlined, DribbbleOutlined } from "@ant-design/icons"
 import "./index.css"
 
@@ -6,7 +6,7 @@ const Introduction = () => {
   return (
     <div>
       <h2 style={{ marginBottom: `3.5rem` }}>
-        <span role="icon" aria-label="greeting">
+        <span role="img" aria-label="greeting">
           👋{" "}
         </span>
         Hi There,

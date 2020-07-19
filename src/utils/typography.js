@@ -19,11 +19,10 @@ const typography = new Typography({
       textDecoration: `underline`,
     },
     p: {
-      opacity: 0.78,
+      opacity: 0.78
     },
 
     pre: {
-      backgroundColor: "var(--codeBg)",
       borderRadius: `4px`,
       padding: `1rem`,
     },

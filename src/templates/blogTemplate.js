@@ -16,7 +16,7 @@ export default function BlogTemplate({ data }) {
         <SEO title={frontmatter.title} />
         <SideBar>
           <h2 className="read-more" style={{ marginBottom: `3.5rem` }}>
-            <span role="icon" arial-label="read">
+            <span role="img" aria-label="read">
               👀{" "}
             </span>
             Read More
