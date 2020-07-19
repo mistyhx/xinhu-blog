@@ -34,8 +34,10 @@ body.dark {
   display: grid;
   position: relative;
   grid-template-rows: 160px auto;
+  grid-template-columns: 100vw;
   animation: fadeIn 1s ease-in-out;
 }
+
 
 @keyframes fadeIn {
   from {
@@ -46,16 +48,16 @@ body.dark {
   }
 }
 
+
 .main {
   padding: 0 4rem 10rem 4rem;
   display: grid;
   grid-template-columns: 280px auto;
-  column-gap: 6rem;
+  column-gap: 4rem;
+  max-width: 1600px;
 }
 
-.articles {
-  max-width: 960px
-}
+
 
 @media only screen and (max-width: 1024px) {
   .main {
