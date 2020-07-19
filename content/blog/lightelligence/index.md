@@ -7,4 +7,4 @@ draft: false
 ---
 Lightelligence is a AI company that focuses on accelerating AI computing with Photonics technology. I was responsible for their website design and development. 
 
-\[Visit Site](<https://www.lightelligence.ai/>)
+[Visit Site](https://www.lightelligence.ai/)
