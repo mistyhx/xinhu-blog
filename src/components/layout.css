@@ -68,7 +68,6 @@ body.dark {
   .main {
     grid-template-columns: 1fr;
     column-gap:0;
-
     margin-top:0;
   }
 
