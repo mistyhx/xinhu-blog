@@ -57,6 +57,20 @@ module.exports = {
               aliases: {},
               showLineNumbers: false,
               noInlineHighlight: false,
+              languageExtensions: [
+                {
+                  language: "superscript",
+                  extend: "javascript",
+                  definition: {
+                    superscript_types: /(SuperType)/,
+                  },
+                  insertBefore: {
+                    function: {
+                      superscript_keywords: /(superif|superelse)/,
+                    },
+                  },
+                },
+              ],
               prompt: {
                 user: "root",
                 host: "localhost",

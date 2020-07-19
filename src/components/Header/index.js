@@ -30,11 +30,6 @@ const Header = () => {
                 style={{ fill: `var(--textNormal)` }}
               />
             </g>
-            {/*<defs>*/}
-            {/*  <clipPath id="clip0">*/}
-            {/*    <rect width="165.9" height="48.2" fill="white" />*/}
-            {/*  </clipPath>*/}
-            {/*</defs>*/}
           </svg>
         </div>
       </AniLink>
