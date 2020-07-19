@@ -1,5 +1,5 @@
 ---
-title: How did I built a lightning fast site with Gatsby and Netlify CMS From Scratch
+title: How did I build a lightning fast site with Gatsby and Netlify CMS From Scratch
 date: 2020-07-17T19:36:35.241Z
 description: "Gatsby and Netlify CMS work perfectly together to create high
   performance and fast speed static websites. This article is a tutorial on how
