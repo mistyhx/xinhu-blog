@@ -20,6 +20,10 @@
   }
 }
 
+.blog-post-container{
+  max-width: 960px;
+}
+
 @media only screen and (max-width: 600px) {
   .blog-post-container {
     grid-row: 1;
