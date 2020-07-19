@@ -58,14 +58,21 @@ body.dark {
   max-width: 1600px;
 }
 
+.articles{
+  margin-top:4rem;
+}
+
 
 
 @media only screen and (max-width: 1024px) {
   .main {
     grid-template-columns: 1fr;
     column-gap:0;
-    row-gap: 4rem;
+
+    margin-top:0;
   }
+
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -79,6 +86,14 @@ body.dark {
   .main {
     padding: 0 1rem 1rem 1rem;
     row-gap: 2rem;
+  }
+
+  .articles{
+    margin-top:2rem;
+  }
+
+  .sidebar{
+    padding:0 2rem;
   }
 
 }

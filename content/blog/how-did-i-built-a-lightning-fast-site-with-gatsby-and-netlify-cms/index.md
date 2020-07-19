@@ -82,6 +82,9 @@ collections:
         }
       - { name: body, label: Body, widget: markdown }
 ```
+
+<br/>
+
 You can replace the backend repo name from **git-gateway** to **test-repo** if you just want to test out the UI. You can write and upload files in the test mode, but nothing is really going to be saved and published. If you want to run the app. You need to save the content to a service like Github and deploy it.  The most convenient way is to add your project to Github and connect your repo to Netlify, which will easily handle the authentication and auto deployment. [Start with Netlify](https://app.netlify.com/start) to deploy your project to a serve. And for for the authentication part there are very specific documentations on Netlify as well. [Authentication](https://docs.netlify.com/visitor-access/git-gateway/). 
 
 Once it is deployed, by logging into your **deployewebsite.com/admin**, you can start to publish your content. For my setting, it created subfolders based on my title ```content/blog/my-blog-name/```. The information that I filled in was save as index.md and the image that I upload is saved to the same directory. If you upload a media not inside the blog in the CMS's main dashboard it would be saved to the ```static/assets``` directory instead. 
@@ -119,6 +122,7 @@ module.exports = {
   ],
 }
 ```
+<br/>
 
 ### 4.2 Query Data
 Now you can query the data in your blog template. 
@@ -174,6 +178,7 @@ export const pageQuery = graphql`
 ```
 
 
+<br/>
 
 ### 4.3  CreatePages API
 Then utilize the createPages API from Gatsby to auto generate the pages. In the ```gatsby.node.js``` file, add the following
@@ -219,6 +224,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 }
 
 ```
+<br/>
 
 ### 4.4 Link List
 The pages are created, but there is not a good way to navigate to it, so you need to create a list to show the different links. 
