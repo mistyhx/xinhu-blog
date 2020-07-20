@@ -6,6 +6,6 @@ description: "React Mini App Series"
 
 I have started a series of React Mini Apps to experience the rich features of React. These apps are designed and developed by me. 
 
-![Quiz App](quizapp.gif)
+![Quiz App](quiz-app.jpg)
 
 [Try App](https://e5gnr.csb.app/)

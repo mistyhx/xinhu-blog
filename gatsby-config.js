@@ -18,8 +18,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `xinhu-design`,
+        short_name: `xinhu`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#ffffff`,
@@ -45,9 +45,11 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 800,
+              maxWidth: 1200,
+              linkImagesToOriginal: false,
             },
           },
+          `gatsby-remark-images-zoom`,
           {
             resolve: `gatsby-remark-prismjs`,
             options: {

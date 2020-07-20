@@ -4,7 +4,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import SideBar from "../components/SideBar"
 import SideArticleList from "../components/SideArticleList"
-import Img from "gatsby-image"
 import "./blogTemplate.css"
 
 export default function BlogTemplate({ data }) {
@@ -29,7 +28,6 @@ export default function BlogTemplate({ data }) {
               {frontmatter.date}
             </p>
             <h1 className="blog-title">{frontmatter.title}</h1>
-            {frontmatter.featuredImage && <Img fluid={frontmatter.featuredImage.childImageSharp.fluid} />}
             <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: html }} />
           </div>
         </div>
@@ -47,13 +45,6 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         description
-        featuredImage {
-          childImageSharp {
-            fluid(maxWidth: 800) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
       }
     }
   }
