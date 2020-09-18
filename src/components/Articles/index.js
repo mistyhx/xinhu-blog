@@ -11,10 +11,10 @@ const Articles = ({ data }) => {
   return (
     <div className="articles">
       <div className="filters">
-        <button onClick={()=>setCategory('projects')}>Projects</button>
-        <button onClick={()=>setCategory('mini-projects')}>Mini Projects</button>
-        <button onClick={()=>setCategory('illustration')}>Illustration</button>
-        <button onClick={()=>setCategory('tutorials')}>Tutorials</button> </div>
+        <button style={{backgroundColor:category === "projects"&& "#d5d5d5" }} onClick={()=>setCategory('projects')}>Projects</button>
+        <button style={{backgroundColor:category === "mini-projects"&& "#d5d5d5" }} onClick={()=>setCategory('mini-projects')}>Mini Projects</button>
+        <button style={{backgroundColor:category === "illustration"&& "#d5d5d5" }} onClick={()=>setCategory('illustration')}>Illustration</button>
+        <button style={{backgroundColor:category === "tutorials"&& "#d5d5d5" }} onClick={()=>setCategory('tutorials')}>Tutorials</button> </div>
       <div className="article-list">
         {filteredPosts && filteredPosts.map((post, index) => <ArticlePreview order={index + 1} key={post.node.id} data={post.node} />)}
       </div>
