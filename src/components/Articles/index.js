@@ -14,6 +14,7 @@ const Tab = ({ title }) => {
 
 const Articles = ({ data }) => {
   const { edges: posts } = data.allMarkdownRemark
+  const filteredPosts = posts.filter(post => post.node.frontmatter.category === 'mini-projects')
   return (
     <div className="articles">
       {/*<div className="tabs">*/}
@@ -22,7 +23,7 @@ const Articles = ({ data }) => {
       {/*  <Tab title="Illustration" />*/}
       {/*</div>*/}
       <div className="article-list">
-        {posts && posts.map((post, index) => <ArticlePreview order={index + 1} key={post.node.id} data={post.node} />)}
+        {filteredPosts && filteredPosts.map((post, index) => <ArticlePreview order={index + 1} key={post.node.id} data={post.node} />)}
       </div>
     </div>
   )
@@ -42,6 +43,7 @@ export default function ArticleList() {
                   title
                   date(formatString: "MMMM DD, YYYY")
                   description
+                  category
                   featuredImage {
                     childImageSharp {
                       fluid(maxWidth: 800) {

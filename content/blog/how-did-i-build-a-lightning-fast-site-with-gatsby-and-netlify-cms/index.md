@@ -4,7 +4,7 @@ date: 2020-07-17T19:36:35.241Z
 description: "Gatsby and Netlify CMS work perfectly together to create high
   performance and fast speed static websites. This article is a tutorial on how
   to build a blog with these technologies from scratch. "
-draft: true
+category: "tutorials"
 ---
 ## Introduction
 

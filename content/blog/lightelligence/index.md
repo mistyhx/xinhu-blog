@@ -3,7 +3,7 @@ title: Lightelligence
 date: 2020-07-19T18:23:30.470Z
 featuredImage: lightelligence.png
 description: "Web Design  and Development "
-draft: false
+category: "projects"
 ---
 ![Lightelligence Website](lightelligence.png)
 
