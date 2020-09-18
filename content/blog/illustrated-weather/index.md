@@ -5,7 +5,8 @@ featuredImage: illustratedweather.png
 description: "UI Mini Projects --002"
 category: "mini-projects"
 ---
-<iframe width="640" height="385" src="https://www.youtube.com/embed/dwj3SLD4VVg?controls=0&rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/459407244" width="640" height="501" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
 
 [Try App](https://illustrated-weather.vercel.app/)
 
