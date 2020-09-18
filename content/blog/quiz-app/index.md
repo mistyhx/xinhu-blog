@@ -1,11 +1,12 @@
 ---
 title: Quiz App
 date: 2020-07-19T20:45:57.478Z
-description: "React Mini App Series"
+featuredImage: quiz-app.jpg
+description: "UI Mini Projects --001"
 ---
-
-I have started a series of React Mini Apps to experience the rich features of React. These apps are designed and developed by me. 
-
 ![Quiz App](quiz-app.jpg)
-
 [Try App](https://e5gnr.csb.app/)
+
+I have built a series of mini apps to challenge my design and development skills
+
+
