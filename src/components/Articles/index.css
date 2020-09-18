@@ -1,18 +1,15 @@
-.tabs {
-  display: flex;
-  flex-direction: row;
+.filters{
+  padding:1rem 0
 }
 
-.tab {
-  position: relative;
-  width: 140px;
-  visibility: hidden;
-  display: none;
+.filters>button{
+  margin-right:0.8rem;
+  margin-top:0.5rem;
+  cursor:pointer;
+  border:0px;
+  padding:0 0.5rem
 }
 
-.dot {
-  font-size: 2rem;
-  height: 1rem;
-  position: relative;
-  top: -1rem;
+.filters>button:focus{
+  outline:0px
 }

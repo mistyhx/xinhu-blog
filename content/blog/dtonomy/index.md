@@ -1,9 +1,9 @@
 ---
 title: DTonomy
-date: 2020-07-19T19:00:57.478Z
+date: 2020-07-18T19:00:57.478Z
 featuredImage: dtonomy.png
 description: "Product and Web Design "
-draft: false
+category: "projects"
 ---
 ![DTonomy](dtonomy.png)
 
