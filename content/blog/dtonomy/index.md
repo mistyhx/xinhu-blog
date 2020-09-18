@@ -7,6 +7,7 @@ category: "projects"
 ---
 ![DTonomy](dtonomy.png)
 
-DTonomy is a AI company that focuses on automating IT services with Artificial Intelligence. I was responsible for their product design and web design. 
+DTonomy is a AI company that focuses on automating IT services with Artificial Intelligence. 
+I was responsible for their product design and web design. I also helped the web development with wordpress.
 
 [Visit Site](https://www.dtonomy.com/)

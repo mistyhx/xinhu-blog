@@ -5,7 +5,7 @@ featuredImage: myrecipes.png
 description: "UI Mini Projects --003"
 category: "mini-projects"
 ---
-<iframe width="560" height="315" src="https://www.youtube.com/embed/BilN3jGy9nU?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/459406939" width="640" height="480" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 I have built a series of mini apps to challenge my design and development skills.
 
