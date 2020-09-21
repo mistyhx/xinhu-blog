@@ -1,14 +1,17 @@
 ---
 title: Quiz App
-date: 2020-07-19T20:45:57.478Z
+date: 2020-09-19T20:45:57.478Z
 featuredImage: quiz-app.jpg
-description: "UI Mini Projects --001"
+description: "UI Mini Projects --006"
 category: "mini-projects"
 ---
 ![Quiz App](quiz-app.jpg)
-[Try App](https://e5gnr.csb.app/)
+[Try App](https://daily-quiz-app.vercel.app/)
 
-I have built a series of mini apps to challenge my design and development skills.
+I have built a series of mini apps to combine art with engineering. 
+These are my original creations that does not rely UI libraries. 
+
+This is an app for quick quiz which combines the art non symmetrical grid system with react.  
 
 
 
