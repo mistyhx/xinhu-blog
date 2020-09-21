@@ -10,8 +10,10 @@ category: "mini-projects"
 
 [Try App](https://simple-notebook.vercel.app/)
 
-I have built a series of mini apps to challenge my design and development skills.
+I have built a series of mini apps to combine art with engineering. 
+These are my original creations that does not rely UI libraries. 
 
-This is an elegant note editing app
+
+This is an markdown note editing app which does not look boring. 
 
 
