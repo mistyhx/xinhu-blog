@@ -1,8 +1,8 @@
 ---
 title: Markdown Notes Editor
-date: 2020-09-21T20:45:57.478Z
+date: 2020-09-20T20:45:57.478Z
 featuredImage: noteseditor.png
-description: "UI Mini Projects --007"
+description: "UI Mini Projects --008"
 category: "mini-projects"
 ---
 
