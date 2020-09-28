@@ -2,7 +2,7 @@
 title: Electronics Product Page
 date: 2020-09-19T20:45:57.478Z
 featuredImage: electronics.png
-description: "UI Mini Projects --007"
+description: "UI Mini Projects --006"
 category: "mini-projects"
 ---
 ![Electronics](electronics.png)
