@@ -25,6 +25,10 @@
   overflow: hidden;
 }
 
+.blog-post-container h2,h3{
+  margin-bottom: 1rem;
+}
+
 .blog-post-container .gatsby-image-wrapper{
   margin-bottom: 2rem;
 }
