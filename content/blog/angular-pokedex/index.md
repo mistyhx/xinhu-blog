@@ -2,7 +2,7 @@
 title: Angular Pokedex
 date: 2020-08-21T20:45:57.478Z
 featuredImage: pokedex.png
-description: "UI Mini Projects --003"
+description: "Recreate the pokedex with Angular"
 category: "mini-projects"
 ---
 

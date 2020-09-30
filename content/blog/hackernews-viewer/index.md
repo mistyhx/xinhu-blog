@@ -2,7 +2,7 @@
 title: Hacker News Viewer
 date: 2020-09-12T20:45:57.478Z
 featuredImage: hackernews.JPG
-description: "UI Mini Projects --004"
+description: "An easy to read Hackernews for mobile and web"
 category: "mini-projects"
 ---
 ![hackernews](hackernews.JPG)

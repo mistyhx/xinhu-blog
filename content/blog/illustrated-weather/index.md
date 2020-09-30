@@ -2,7 +2,7 @@
 title: Illustrated Weather
 date: 2020-07-20T20:45:57.478Z
 featuredImage: illustratedweather.png
-description: "UI Mini Projects --001"
+description: "Weather App"
 category: "mini-projects"
 ---
 <iframe src="https://player.vimeo.com/video/459407244" width="640" height="501" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>

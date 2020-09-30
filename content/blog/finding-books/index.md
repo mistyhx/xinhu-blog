@@ -2,7 +2,7 @@
 title: Finding Books
 date: 2020-09-28T20:45:57.478Z
 featuredImage: findingbooks.png
-description: "UI Mini Projects --008"
+description: "A customized experience with GOOGLE BOOKS API"
 category: "mini-projects"
 ---
 ![Find_books](findingbooks.png)

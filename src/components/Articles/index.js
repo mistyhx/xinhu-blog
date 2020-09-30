@@ -5,16 +5,16 @@ import "./index.css"
 
 
 const Articles = ({ data }) => {
-  const [category, setCategory] = useState("projects")
+  const [category, setCategory] = useState("mini-projects")
   const { edges: posts } = data.allMarkdownRemark
   const filteredPosts = posts.filter(post => post.node.frontmatter.category === category)
   return (
     <div className="articles">
       <div className="filters">
-        <button style={{backgroundColor:category === "projects"&& "#d5d5d5" }} onClick={()=>setCategory('projects')}>Projects</button>
         <button style={{backgroundColor:category === "mini-projects"&& "#d5d5d5" }} onClick={()=>setCategory('mini-projects')}>Mini Projects</button>
+        <button style={{backgroundColor:category === "projects"&& "#d5d5d5" }} onClick={()=>setCategory('projects')}>Projects</button>
         <button style={{backgroundColor:category === "illustration"&& "#d5d5d5" }} onClick={()=>setCategory('illustration')}>Illustration</button>
-        <button style={{backgroundColor:category === "tutorials"&& "#d5d5d5" }} onClick={()=>setCategory('tutorials')}>Tutorials</button> </div>
+        <button style={{backgroundColor:category === "tutorials"&& "#d5d5d5" }} onClick={()=>setCategory('tutorials')}>Technologies</button> </div>
       <div className="article-list">
         {filteredPosts && filteredPosts.map((post, index) => <ArticlePreview order={index + 1} key={post.node.id} data={post.node} />)}
       </div>
