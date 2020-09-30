@@ -2,7 +2,7 @@
 title: Markdown Notes Editor
 date: 2020-09-20T20:45:57.478Z
 featuredImage: noteseditor.png
-description: "UI Mini Projects --007"
+description: "In browser Markdown note editor"
 category: "mini-projects"
 ---
 

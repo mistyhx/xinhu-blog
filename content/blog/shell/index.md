@@ -13,6 +13,8 @@ which assures quality work in construction and maintenance.
 
 Technologies applied include React, React Native, AWS Amplify, Bluetooth Protocols
 
+### Technologies
+React | React Native | Aws Amplify | GraphQL | REST | Sketch | Invision
 
 ### My Role
 UI/UX Design; Front-end Development 

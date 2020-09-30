@@ -2,7 +2,7 @@
 title: Quiz App
 date: 2020-09-19T20:45:57.478Z
 featuredImage: quiz-app.jpg
-description: "UI Mini Projects --006"
+description: "Random Quiz Challenges with a modern look"
 category: "mini-projects"
 ---
 ![Quiz App](quiz-app.jpg)
