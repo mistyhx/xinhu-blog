@@ -15,6 +15,9 @@ Lightelligence is a AI company that focuses on accelerating AI computing with Ph
 I designed and developed this site on Squarespace with Javascript/CSS customization. 
 I provided all the videos, graphics and icons. 
 
+###Technologies 
+After Effects | Photosho | Javascript | Mailchimp | Sketch  
+
 ###My Role 
 Art Director, Web Design, Development
 

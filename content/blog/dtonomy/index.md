@@ -15,5 +15,10 @@ DTonomy is a AI company that focuses on automating IT services with Artificial I
 I was responsible for their product design and web design. I also helped the web development with wordpress.
 
 
+###Technologies 
+Photoshop | Wordpress PHP 
+
 ### My Role 
 UI/UX Design, Development
+
+
