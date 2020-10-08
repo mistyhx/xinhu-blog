@@ -2,7 +2,7 @@
 
 ## Introduction
 
-I created this simple blog with gatsby and its a lof of its out of box plugins to record my thoughts and work. I only used CSS for the styling
+I created this simple blog with gatsby and a lof of its out of box plugins to record my thoughts and work. I only used CSS for the styling
 
 [Visit Website](https://www.xinhudesign.com)
 
