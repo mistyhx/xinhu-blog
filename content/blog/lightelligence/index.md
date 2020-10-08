@@ -16,7 +16,7 @@ I designed and developed this site on Squarespace with Javascript/CSS customizat
 I provided all the videos, graphics and icons. 
 
 ###Technologies 
-After Effects | Photosho | Javascript | Mailchimp | Sketch  
+After Effects | Photoshop | Javascript | Mailchimp | Sketch  
 
 ###My Role 
 Art Director, Web Design, Development

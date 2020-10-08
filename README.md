@@ -2,19 +2,23 @@
 
 ## Introduction
 
-I created this simple blog with gatsby to record my thoughts.
+I created this simple blog with gatsby and its a lof of its out of box plugins to record my thoughts and work. I only used CSS for the styling
 
-## Development Mode
+[Visit Website](www.xinhudesign.com)
 
-To run the app locally
-`gatsby develop`
+## Usage 
+1. Clone the repository 
+2. Run `yarn` or `npm install` 
+3. Run `gatsby develop` to view it on `localhost:8000`
 
-## Learning
+## Features
+- Lightening fast performance (94/100 with GOOGLE Lighthouse Inspection)
+- Optimized SEO (100/100 with GOOGLE Lighthouse Inspection)
+- Markdown to page 
+- GraphQL 
+- Lazy loading images 
+- Dark light mode 
+- Pure CSS Grid Systems 
 
-1. Images could be loaded using graphql lazy loading instead of pass the data from parent
-2. Components need to be wrapped in the static query component, while templates and pages can directly use the graphql API
-3. Need the transformer plugin to parse image path markdown files.
-4. You must at least one markdown file, or one markdown file with image to use allMarkdown and featured image
-5. In order for PRIMS to apply the style must add the language description. 
 
 <!-- AUTO-GENERATED-CONTENT:END -->

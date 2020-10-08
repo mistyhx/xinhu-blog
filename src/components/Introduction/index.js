@@ -6,9 +6,9 @@ const Introduction = () => {
   return (
     <div>
       <h2 style={{ marginBottom: `3.5rem` }}>
-        <span role="img" aria-label="greeting">
-          👋{" "}
-        </span>
+        <div className="greeting-symbol" role="img" aria-label="greeting">
+          👋
+        </div>
         Hi There,
       </h2>
       <p>

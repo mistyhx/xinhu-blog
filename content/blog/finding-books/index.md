@@ -9,13 +9,28 @@ category: "mini-projects"
 
 [Try App](https://finding-books.vercel.app/)
 
-I have built a series of mini apps to combine art with engineering. 
-These are my original creations that does not rely UI libraries. 
+The UI and interactions for this app is completely from scratch, except the React-Spring
+part(a library for animation and transition state management in React). This app wraps the GOOGLE books api with fully customized UI solution.
+It focuses on exploring visual elements and typography.
 
-This is a app wraps the GOOGLE books api with my own UI solution. Since this app
-focus on exploring visual elements and typography. It is not fully functional with some 
-of the component such as filtering and pagination. 
+### My Role 
+Ideation | Design | Graphics | Development 
 
 ### Technologies 
 React | Sass | Google Books API | React-Spring
+
+
+### UI Features Implemented
+1. SVG Animation 
+2. Transitions 
+3. Drag and Drop 
+4. Pagination 
+5. Drawer
+6. Loading 
+
+### Design Inspiration 
+1. Modern Art 
+2. Josef Müller Brockmann - Grid Systems/Raster Systems
+
+
 

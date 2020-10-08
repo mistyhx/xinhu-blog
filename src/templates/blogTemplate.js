@@ -15,9 +15,10 @@ export default function BlogTemplate({ data }) {
         <SEO title={frontmatter.title} />
         <SideBar>
           <h2 className="read-more" style={{ marginBottom: `3.5rem` }}>
-            <span role="img" aria-label="read">
-              👀{" "}
-            </span>
+            <div className="eyes-symbol" role="img" aria-label="read">
+              <div className="eye"><div className="eye-ball"><div className="eye-light"/></div></div>
+              <div className="eye"><div className="eye-ball"><div className="eye-light"/></div></div>
+            </div>
             Read More
           </h2>
           <SideArticleList id={id} />
