@@ -28,7 +28,9 @@ React | Sass | Google Books API | React-Spring
 5. Drawer
 6. Loading 
 
-
+### Design Inspiration 
+1. Modern Art 
+2. Josef Müller Brockmann - Grid Systems/Raster Systems
 
 
 

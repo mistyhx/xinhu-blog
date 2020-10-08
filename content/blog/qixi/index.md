@@ -22,7 +22,6 @@ same idea and adopted the codebase for their QIXI campaign mini website.
 
 ### My Role 
 Product Owner; Ideation; UI/UX Design; Development
-                                        Product Owner; UI/UX Design; Development
 
 ### Technologies 
 React | Sass |  Photoshop | Airtable | Google Analytics 
@@ -52,6 +51,10 @@ project.
 3. Dealing with Android background offset issues with Keyboard
 4. Deal with scrolling up issues 
 
+
+### Design Inspirations 
+1. Fairytale 
+2. Traditionally Chinese Art 
 
 ### What Could be Done Better
 
